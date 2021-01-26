@@ -1,0 +1,16 @@
+@import './assets/scss/palette';
+@import './assets/scss/utils';
+@import './assets/scss/fonts';
+
+* {
+  font-family: 'inter-light';
+  outline: none;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: var(--gray);
+}

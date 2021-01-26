@@ -1,0 +1,66 @@
+main {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+
+  @media only screen and (max-width: 700px) {
+    width: 90%;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 100;
+    margin-bottom: 40px;
+    color: var(--dark-green);
+    background: var(--beige);
+    padding: 15px 0px;
+  }
+
+  form {
+    label {
+      display: block;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+
+    .container-authors-input {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      @media only screen and (max-width: 600px) {
+        grid-template-columns: 1fr;
+      }
+
+      app-input-text {
+        margin: 0px 40px 15px 0px;
+        display: inline-block;
+
+        @media only screen and (max-width: 600px) {
+          margin: 0px auto 15px auto;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .container-formatted-names{
+    &__label{
+      display: block;
+      font-size: 18px;
+      margin-bottom: 15px;
+      font-family: 'inter';
+    }
+  }
+
+  app-button {
+    margin-top: 25px;
+    display: block;
+
+    @media only screen and (max-width: 600px) {
+      text-align: center;
+    }
+  }
+}
