@@ -5,11 +5,12 @@ Ao preencher o formulário e submetê-lo, os dados são formatados por algumas r
 
 <b>Endereço de acesso:</b> https://dustanisci.github.io/obras-bibliograficas-angular11/
 
-<b>Tecnologias utilizadas:</b>
+<b>Tecnologias e modelos utilizados:</b>
 <ul>
   <li>Angular 11</li>
   <li>HTML 5 </li>
   <li>SCSS / CSS 3</li>
+<li>BEM</li>
   <li>TypeScript</li>
   <li>JavaScript</li>
   <li>Control Value Accessor</li>
@@ -19,4 +20,6 @@ Ao preencher o formulário e submetê-lo, os dados são formatados por algumas r
   <li>Reactive Forms</li>
   <li>Validações de formulário</li>
   <li>Responsivo</li>
+<li>Conventional Commits</li>
+<li>Gitflow</li>
 </ul>
