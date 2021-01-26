@@ -1,0 +1,43 @@
+<main>
+
+  <ng-container *ngIf="!showFormattedNames">
+    <h1>obras bibliográficas</h1>
+
+    <form [formGroup]="authorForm">
+
+      <app-input-number formControlName="totalAuthors" label="1. marque a quantidade de autores"
+        (subtractBtn)="removeControlFormGroup()" (addBtn)="addControlFormGroup()" [error]="hasErrorInputNumber()">
+      </app-input-number>
+
+      <ng-container *ngIf="authorForm.value.totalAuthors">
+        <label>2. preencha os nomes dos autores</label>
+        <div class="container-authors-input">
+
+          <ng-container *ngFor="let item of [].constructor(authorForm.value.totalAuthors); let i = index">
+            <app-input-text *ngIf="authorForm.value.totalAuthors > 0" [label]="(i+1)+'º autor'" [id]="(i+1)+'-author'"
+              [formControlName]="'author'+(i+1)" [error]="hasErrorInputText(i)" #inputText
+              (keyup)="checkTypedInputText(inputText.value, 'author'+(i+1))">
+            </app-input-text>
+          </ng-container>
+
+        </div>
+      </ng-container>
+
+      <app-button *ngIf="authorForm.value.totalAuthors" [disabled]="authorForm.invalid" (click)="sendData()">
+        formatar nomes
+      </app-button>
+    </form>
+  </ng-container>
+
+
+  <ng-container *ngIf="showFormattedNames">
+    <h1>nomes formatados</h1>
+    <div class="container-formatted-names">
+      <label class="container-formatted-names__label" *ngFor="let item of namesPrint; let i = index">
+        {{ (i+1) +'. ' + (item | formatName) }}
+      </label>
+    </div>
+    <app-button (click)="reset()">voltar</app-button>
+  </ng-container>
+
+</main>
