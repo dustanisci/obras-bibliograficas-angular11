@@ -1,0 +1,26 @@
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-center-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-dark-green {
+  background: var(--dark-green);
+}
+
+.bg-light-green {
+  background: var(--light-green);
+}
+
+.bg-dark-purple {
+  background: var(--dark-purple);
+}
+
+.bg-light-puple {
+  background: var(--light-puple);
+}
