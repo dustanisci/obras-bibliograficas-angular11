@@ -1,0 +1,26 @@
+label {
+  display: block;
+  font-size: 20px;
+  color: var(--dark-green);
+}
+
+input {
+  border-radius: 4px;
+  height: 40px;
+  padding: 5px;
+  margin-top: 5px;
+  border: 2px solid;
+  border-color: var(--dark-green);
+  transition: 0.4s all;
+  font-size: 20px;
+  width: 100%;
+
+  &.invalid {
+    border-color: var(--invalid);
+  }
+
+  &:hover:not(.invalid),
+  &:focus:not(.invalid) {
+    border-color: var(--light-green);
+  }
+}
