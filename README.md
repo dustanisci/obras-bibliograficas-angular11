@@ -1,7 +1,7 @@
-# Formatação de nomes de autores de livros
+# Obras Bibliográficas
 
 <b>Descrição:</b> Formulário que é criado automaticamente conforme a quantidade de autores selecionada (formulário dinâmico).
-Ao preencher o formulário e submetê-lo, os dados são formatados em estilo de autores de livros, artigos e outras publicações.
+Ao preencher o formulário e submetê-lo, os dados são formatados por algumas regras de autores de livros, artigos e outras publicações.
 
 <b>Endereço de acesso:</b> https://dustanisci.github.io/obras-bibliograficas-angular11/
 
